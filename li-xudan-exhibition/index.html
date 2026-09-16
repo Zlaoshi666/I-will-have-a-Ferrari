@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ede8dc">
+  <meta name="description" content="一卷山河，一生求索。通过水墨动画、人物年表与地图图层互动，走近地理学家、地理教育家李旭旦。">
+  <title>地图上的人 · 李旭旦互动数字展</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='2' width='28' height='28' rx='3' fill='%239c3e2e'/%3E%3Cpath d='M8 12v12h16V12M16 7v17' fill='none' stroke='%23f7efdc' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#chapters">跳至正文</a>
+  <div class="reading-progress" aria-hidden="true"><span></span></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="地图上的人，返回开篇"><span class="brand-seal" aria-hidden="true">山<br>河</span><span>地图上的人<small>李旭旦 · 互动数字展</small></span></a>
+    <nav aria-label="展览导航"><a href="#chapters">人物</a><a href="#journey">足迹</a><a href="#explore">观地图</a><a href="#archive">阅文献</a></nav>
+    <button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="false"><span class="motion-icon" aria-hidden="true"></span><span class="motion-label">暂停动画</span></button>
+  </header>
+  <main>
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-art" aria-hidden="true"></div><div class="hero-wash" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow hero-enter">科学家精神 · 数字人文展</p>
+        <div class="hero-title-wrap hero-enter"><h1 id="hero-title">地图上<span>的人<i aria-hidden="true">求实</i></span></h1></div>
+        <p class="hero-subtitle hero-enter">一卷山河，一生求索。</p>
+        <p class="hero-description hero-enter">走近李旭旦，<br>看见山河之间，人与土地的联系。</p>
+        <a class="unroll-link hero-enter" href="#chapters"><span class="circle-arrow" aria-hidden="true">↓</span><span>展开此卷<small>从江南出发</small></span></a>
+      </div>
+      <div class="hero-side" aria-hidden="true">地有所载 · 人有所为</div>
+      <div class="hero-bottom"><span>李旭旦 <b>1911 — 1985</b></span><span>人文地理学家 · 地理教育家</span><span class="art-caption">水墨意象 / AI 创作</span></div>
+    </section>
+
+    <section class="chapters section-shell" id="chapters" aria-labelledby="chapters-title">
+      <div class="section-heading reveal"><p class="eyebrow">卷一 / 其人</p><h2 id="chapters-title">以山河为书，<br>以育人为志。</h2><p class="section-intro">从江苏江阴出发，他把目光投向世界，<br class="desktop-break">也把一生的学问留在中国的土地与课堂。</p></div>
+      <div class="chapter-grid">
+        <article class="chapter reveal"><div class="chapter-top"><span class="chapter-number">一</span><span class="chapter-date">1936 — 1939</span></div><p class="chapter-kicker">求知 · 眼中有世界</p><h3>远行，是为了看得更深。</h3><p>1936年，李旭旦赴英国剑桥大学留学，1939年回国。他持续介绍、翻译国外地理学著作，将开阔的学术视野带入中国的地理研究。</p></article>
+        <article class="chapter reveal"><div class="chapter-top"><span class="chapter-number">二</span><span class="chapter-date">1947</span></div><p class="chapter-kicker">求实 · 心中有土地</p><h3>山川之外，还要看见人。</h3><p>在《中国地理区之划分》中，他把地貌、气候等自然要素，与人口、经济、文化等人文要素一同考察。认识一个地方，需要看见这些因素的联系。</p></article>
+        <article class="chapter reveal"><div class="chapter-top"><span class="chapter-number">三</span><span class="chapter-date">1952 年后</span></div><p class="chapter-kicker">育人 · 身后有来者</p><h3>把学问，带进更多课堂。</h3><p>1952年后，李旭旦到南京师范学院创建地理系，先后担任系主任、名誉系主任。研究与教学相伴，他将对地理的思考，延续到后来者的求学之路。</p></article>
+      </div>
+      <p class="editorial-note reveal">人物生平与研究资料见<a class="source-reference" href="#source-01">资料 01</a>。章节标题与叙述为创作者表达，非李旭旦原话。</p>
+    </section>
+
+    <section class="journey" id="journey" aria-labelledby="journey-title">
+      <div class="journey-inner section-shell">
+        <div class="journey-heading reveal"><p class="eyebrow">卷二 / 行迹</p><h2 id="journey-title">一生的坐标</h2><p>点选年份，翻阅他与地理相伴的一生。</p></div>
+        <div class="timeline-buttons reveal" role="group" aria-label="选择生平年份">
+          <button data-year="1911" aria-pressed="false">1911<span>江阴</span></button><button data-year="1936" aria-pressed="false">1936<span>剑桥</span></button><button data-year="1939" aria-pressed="false">1939<span>归国</span></button><button data-year="1947" aria-pressed="false">1947<span>研究</span></button><button data-year="1952" aria-pressed="true">1952<span>南师</span></button><button data-year="1985" aria-pressed="false">1985<span>留泽</span></button>
+        </div>
+        <div class="timeline-detail reveal" aria-live="polite" aria-atomic="true"><div class="timeline-year" id="timeline-year">1952<small>年后</small></div><div class="timeline-copy"><p class="timeline-place" id="timeline-place">南京 · 南京师范学院</p><h3 id="timeline-title">一间课堂，延伸出新的道路。</h3><p id="timeline-description">李旭旦到南京师范学院创建地理系，先后担任系主任、名誉系主任。在研究与教学之间，他让人文地理学的思考有了新的生长之地。</p><p class="timeline-references">生平见<a class="source-reference" href="#source-01">资料 01</a>，著作书目见<a class="source-reference" href="#source-03">资料 03</a>。</p></div></div>
+        <div class="journey-foot"><span>求知 / 求实 / 育人</span><span>史实整理 · 非完整年谱</span></div>
+      </div>
+    </section>
+
+    <section class="explore section-shell" id="explore" aria-labelledby="explore-title">
+      <div class="explore-heading reveal"><div><p class="eyebrow">卷三 / 观地</p><h2 id="explore-title">一张地图，<em>不止山水。</em></h2></div><p>叠加三个图层，观察一片土地。<br>再点选图中标记，看看它们如何相连。</p></div>
+      <div class="map-toolbar reveal"><div class="layer-toggles" role="group" aria-label="显示地图图层"><button data-layer="nature" aria-pressed="true"><span class="layer-symbol nature-symbol" aria-hidden="true">山</span>自然环境<span class="toggle-mark" aria-hidden="true">✓</span></button><button data-layer="settlement" aria-pressed="false"><span class="layer-symbol" aria-hidden="true">居</span>聚落分布<span class="toggle-mark" aria-hidden="true">＋</span></button><button data-layer="connection" aria-pressed="false"><span class="layer-symbol" aria-hidden="true">行</span>人的活动<span class="toggle-mark" aria-hidden="true">＋</span></button></div><button class="text-button" id="map-reset" type="button">重置图层 <span aria-hidden="true">↺</span></button></div>
+      <div class="map-experience reveal">
+        <div class="map-canvas" role="group" aria-label="人地关系概念地图">
+          <img class="map-art" src="assets/valley.webp" alt="水墨概念山水图：河流穿过山谷，两岸分布田地、道路与聚落。">
+          <svg class="connection-lines" viewBox="0 0 1000 680" preserveAspectRatio="none" aria-hidden="true"><g class="layer-visual" data-for-layer="connection" hidden><path d="M220 435 Q360 390 490 408 T780 449"/><path d="M220 435 Q380 535 570 500 T780 449"/></g><g class="layer-visual settlement-links" data-for-layer="settlement" hidden><circle cx="220" cy="435" r="48"/><circle cx="490" cy="408" r="43"/></g></svg>
+          <button class="map-node node-mountain" data-node="mountain" data-for-layer="nature" aria-pressed="false"><span class="node-dot"></span><span>山地</span></button>
+          <button class="map-node node-river" data-node="river" data-for-layer="nature" aria-pressed="true"><span class="node-dot"></span><span>河流</span></button>
+          <button class="map-node node-village" data-node="village" data-for-layer="settlement" aria-pressed="false" hidden><span class="node-dot"></span><span>聚落</span></button>
+          <button class="map-node node-field" data-node="field" data-for-layer="settlement" aria-pressed="false" hidden><span class="node-dot"></span><span>田地</span></button>
+          <button class="map-node node-path" data-node="path" data-for-layer="connection" aria-pressed="false" hidden><span class="node-dot"></span><span>往来</span></button>
+          <span class="map-compass" aria-hidden="true">观<br>地</span><p class="map-image-note">AI 山水意象 · 图层为概念示意</p>
+        </div>
+        <aside class="map-insight" aria-live="polite" aria-atomic="true"><p class="eyebrow" id="insight-kicker">自然环境 / 河流</p><span class="insight-character" id="insight-character" aria-hidden="true">水</span><h3 id="insight-title">一条河，联系着什么？</h3><p id="insight-body">河流不仅是地图上的线条。水源、交通与沿岸生活，都可能与它相关。打开“聚落分布”和“人的活动”，继续观察。</p><div class="insight-bottom"><span id="layer-count">已展开 1 / 3 个图层</span><p>自然与人文相联系，才能更完整地理解一个地方。</p></div></aside>
+      </div>
+      <p class="map-disclaimer">本互动用于解释人地关系的基本视角，不对应真实地理位置，也不复原李旭旦的某项具体研究成果。学术背景见<a class="source-reference" href="#source-01">资料 01</a>。</p>
+    </section>
+
+    <section class="archive section-shell" id="archive" aria-labelledby="archive-title">
+      <div class="archive-heading reveal"><div><p class="eyebrow">卷四 / 留痕</p><h2 id="archive-title">字里行间，有迹可循。</h2></div><p>回到资料，继续阅读。</p></div>
+      <div class="archive-list reveal">
+        <a id="source-01" class="archive-entry" href="https://igsnrr.cas.cn/cbkx/kpyd/dlxj/202009/t20200910_5692705.html" target="_blank" rel="noopener noreferrer"><span class="archive-index">01</span><div><p class="archive-type">人物资料 / 中国科学院地理科学与资源研究所</p><h3>地理教育家——李旭旦</h3><p>生平、区域地理研究与人地关系思想的主要参考。</p></div><span class="archive-arrow" aria-hidden="true">↗</span></a>
+        <a id="source-02" class="archive-entry" href="https://www.geog.com.cn/CN/abstract/article/0375-5444/20460" target="_blank" rel="noopener noreferrer"><span class="archive-index">02</span><div><p class="archive-type">学术文献 / 《地理学报》1986年第41卷第4期</p><h3>李旭旦先生对我国地理学的贡献</h3><p>宋家泰、吴传钧、金其铭著；从学术贡献回望他的地理人生。</p></div><span class="archive-arrow" aria-hidden="true">↗</span></a>
+        <a id="source-03" class="archive-entry" href="https://www.ecsponline.com/goods.php?id=18445" target="_blank" rel="noopener noreferrer"><span class="archive-index">03</span><div><p class="archive-type">著作书目 / 科学出版社</p><h3>人文地理学概说</h3><p>查阅出版信息与目录，进一步认识人文地理学的研究视野。</p></div><span class="archive-arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+    <section class="closing" aria-label="展览结语"><p class="eyebrow reveal">卷有尽，求知无尽。</p><p class="closing-quote reveal">图上每一个点，<br>都值得走近一点。</p><p class="closing-credit reveal">创作者寄语</p><a href="#top" class="return-top">收卷，回到开篇 ↑</a></section>
+  </main>
+  <footer class="site-footer"><div><span class="footer-title">地图上的人</span><p>李旭旦互动数字展 · 科学家精神主题 AI 创作</p></div><div class="footer-links"><button type="button" data-open-dialog="creation-dialog">创作说明</button><a href="creation-notes.md" download>下载说明 ↗</a><a href="#archive">资料来源</a></div><p class="footer-disclosure">本展为学生创作方向作品，非校方或研究机构官方网站。生成图像为艺术表达，史实内容可循来源核验。</p></footer>
+  <dialog id="creation-dialog" aria-labelledby="creation-title"><button class="dialog-close" type="button" aria-label="关闭创作说明">×</button><p class="eyebrow">关于这件作品</p><h2 id="creation-title">创作说明</h2><p>《地图上的人》以李旭旦的求知、研究与育人经历为线索，将科学史资料转化为可以阅读、操作与追溯的互动数字展。</p><h3>史实与艺术表达</h3><p>生平与学术介绍对照中科院地理所、学术期刊及出版社资料整理。章节标题、结语为创作者表达；山水意象和互动地图不作为历史图像或真实地理数据使用。</p><h3>浏览与无障碍</h3><p>可使用键盘操作年表、图层和地图标记。进入网站时默认开启动态效果，可使用右上角按钮暂停或恢复。</p><a class="download-notes" href="creation-notes.md" download>下载完整创作说明 ↓</a></dialog>
+</body>
+</html>
